@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition property-duration</title>
+  <style>
+    .container {
+      background: rgb(253, 230, 230);
+      width: 450px;
+      height: 100px;
+      margin: 30px auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container:hover .box {
+      transform: translate(20px, 30px);
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box1 {
+      background: rgb(82, 197, 82);
+      transition: transform 500ms;
+    }
+
+    .box2 {
+      background: darkcyan;
+      transition: transform 750ms;
+    }
+
+    .box3 {
+      background: rgb(255, 109, 93);
+      transition: transform 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+</body>
+
+</html>
